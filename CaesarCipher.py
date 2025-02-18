@@ -20,6 +20,8 @@ def encode(message, key):
 
 #def decode(message, key):
     #We will want to decode the message here.
+    plaintext = encode(message, 26 - key)
+    return plaintext
 
 def main():
     message = input("Enter a message: ")
@@ -29,7 +31,7 @@ def main():
     print ("Encrypted:", secret)
     #plaintext = decode(secret, key)
     #print ("Decrypted:", plaintext)
-
+    
 
 if __name__ == '__main__':
   main()
