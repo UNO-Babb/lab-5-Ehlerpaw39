@@ -47,11 +47,11 @@ def main():
 
     #User should get 6 guesses to guess
     guessNumber = 0
-    guess = ""
+    
     while guessNumber < 6 and guess != todayWord:
 
     #Ask user for their guess
-    guess = input("Enter your guess")
+      guess = input("Enter guess: ")
     guessNumber = guessNumber + 1
 
     #Give feedback using on their word:
